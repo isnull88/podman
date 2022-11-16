@@ -144,7 +144,7 @@ podman system info
 podman system df
 ```
 
-- Сценарий "Как ...?"
+- Сценарий "Как аутентифицироваться на своём корпоративном registry?"
 ```shell
 podman logout
 podman login {{ registry-host }}
@@ -153,13 +153,13 @@ podman login {{ registry-host }}
 - Сценарий "Как найти нужный образ в registry?"
 Залогиниться браузером по адресу {{ registry-host }}, в поиске найти нужный образ и скопировать полное символьное имя (включая сетевой адрес хоста).
 
-- Сценарий "Как ...?"
+- Сценарий "Как скачать образ?"
 ```shell
 podman image pull {{ registry-host }}/{{ os-images-path }}/alpine:3.14
-podman system df
+podman system df - сколько места на диске занимают сущности
 ````
 
-- Сценарий "Как ...?"
+- Сценарий "Как скачать и запустить образ?"
 ```shell
 podman container run hello
 
